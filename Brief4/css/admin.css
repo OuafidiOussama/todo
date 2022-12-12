@@ -1,0 +1,1006 @@
+/* variable */
+:root{
+    /* Typography */
+
+    --ff-ubuntu: 'Ubuntu', sans-serif;
+  
+    --fs-1: 32px;
+    --fs-2: 22px;
+    --fs-3: 18px;
+    --fs-4: 14px;
+    --fs-5: 12px;
+  
+    --fw-500: 500;
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+
+
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+a{
+  text-decoration: none !important;
+  text-decoration-line: none;
+  color: inherit !important;
+}
+li { list-style: none; }
+::-webkit-scrollbar{ width: 0;}
+
+
+/* header */
+body{
+  font-family: var(--ff-ubuntu);
+}
+header{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+}
+.navbar-list li a{
+  border-radius: 6px;
+  padding: 6px 15px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.navbar-list li a:hover{
+  background: rgb(28, 102, 186);
+  color: black;
+}
+
+.navbar{
+  padding-top: 0 !important;
+  width: 80%;
+}
+.navbar-list {
+
+  padding-top: 3vh;
+  display: flex;
+  gap: 50px;
+  
+}
+
+.hide{
+  display: none;
+}
+#btn2 button{
+  width: 100px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#btn2 button:hover{
+  color: white;
+  background-color: rgb(185, 72, 185);
+}
+
+.logout{
+  text-align: right;
+  margin-right: 8.5vw;
+  transform: translateY(-20px);
+}
+
+
+.btn3, .btn4{  
+  text-align: right;
+  padding-right: 1.5vw;
+  padding-bottom: 2vh;
+}
+.btn3 button, .btn4 button{
+  width: 120px;
+  height: 45px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.container1{
+  width: 100%;
+  text-align: center;
+}
+.container1 p{
+  display: block;
+  margin: auto;
+  width: 70%;
+  
+}
+.hot-event{
+  margin-top: 10vh;
+}
+
+.landing{
+  background-image: url(../assets/backgrounds/background1.jpg);
+  background-position-x: center;
+  height: 590px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img{
+  padding-top: 17vh;
+  width: 60%;
+  padding-bottom: 5vh;
+
+}
+.card0{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 5px hsla(0, 0%, 0%, 0.15);
+}
+.headline{
+  color: white;
+  display: block;
+  align-items: center;
+  padding-bottom: 3vh;
+}
+
+.description{
+  color: white;
+  padding-bottom: 20px;
+}
+section{
+  padding-bottom: 10vh;
+}
+.address{
+  padding: 1vh 0 0 2vw;
+}
+hr{
+  transform: translateY(-15px);
+}
+.footer{
+  font-size: 100px;
+  text-align: center;
+  transform: translateY(-30px);
+}
+.fa-brands{
+  display: inline;
+}
+
+.btn{
+  font-family: var(--ff-ubuntu);
+  border-radius: 10px !important;
+  padding: 5px 20px !important;
+  color: black !important;
+  border: 3px solid black !important;
+  font-size: var(--fs-3) !important;
+}
+.btn:hover{
+  color: white !important;
+  background-color: black !important;
+}
+.back-ground{
+  /* background-image: url(../assets/backgrounds/background2.jpg); */
+  
+  background-repeat: no-repeat;
+  background-position: auto;
+  background-size: cover;
+  
+}
+
+
+.fa-pen-to-square{
+  position: absolute;
+  color: white;
+  padding: 6px 6px;
+  border: 2px solid white ;
+  border-radius: 3px;
+  transform: translate(247px,-195px);
+  font-size: 25px;
+  transition: 0.5S ease-in-out;
+  cursor: pointer;
+}
+.fa-trash{
+  position: absolute;
+  color: white;
+  padding: 6px 6px;
+  border: 2px solid white ;
+  border-radius: 3px;
+  transform: translate(297px,-195px);
+  font-size: 25px;
+  transition: 0.5S ease-in-out;
+  cursor: pointer;
+}
+.fa-pen-to-square:hover, .fa-trash:hover{
+  color: black;
+  background-color: white;
+}
+
+
+.more{
+  position:fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%) scale(1.25);
+  width: 780px;
+  height: 450px;
+  padding: 20px 30px;
+  background: white;
+  box-shadow: 2px 2px 5px 5px hsla(0, 0%, 0%, 0.15);
+  border-radius: 10px;
+  overflow-y:auto;
+}
+
+.more .close-btn-more{
+  position: absolute;
+  top:10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  color: black;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.more .card1 .backgroundimg{
+  height: 150px;
+  padding: 3px;
+  margin: auto;
+  background-image: url(../assets/backgrounds/background1.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-y: -60px;
+  border-radius: 10px;
+
+
+}
+.more .card1 .backgroundimg img{
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+
+
+}
+.more .card1 .image{
+  margin: auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50% ;
+  padding: 3px;
+  background: violet  ;
+  transform: translateY(-75px);
+}
+
+.more .card1 .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+
+}
+
+.more .card1 .card-detail span{
+  display: block;
+  text-align: center;
+  transform: translateY(-70px);
+}
+.more .card1 .card-detail .box{
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  height: fit-content;
+  border-radius: 30px;
+  box-shadow: 1px 1px 5px 1px rgba(34, 34, 34, 0.274);
+  padding: 2vh 0 0 2vh;
+  transform: translateY(-60px);
+}
+.card-detail h5{
+  transform: translateY(-40px);
+  text-align: center;
+}
+
+.member{
+  transform: translateY(-30px);
+  display: flex;
+  justify-content: space-evenly;
+}
+.members-card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+.member .rep, .mem{
+  width: 300px;
+}
+
+.pic1{
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+  border-radius: 50% ;
+  padding: 3px;
+  background: rgb(84, 86, 211) ;
+  transform: translateY(-20px);
+
+  
+}
+.pic1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  
+}
+.pic2{
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+  border-radius: 50% ;
+  padding: 3px;
+  background: rgb(84, 86, 211);
+  transform: translateY(-20px);
+
+  
+}
+.pic2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  
+}
+
+
+
+.club-edit .fa-pen-to-square{
+  position: absolute;
+  color:black;
+  padding: 6px 6px;
+  border-radius: 3px;
+  transform: translate(410px,-96.5px);
+  font-size: 15px;
+  transition: 0.5S ease-in-out;
+  cursor: pointer;
+}
+.club-edit .fa-trash{
+  position: absolute;
+  color: white;
+  padding: 6px 6px;
+  border: 2px solid white ;
+  border-radius: 3px;
+  transform: translate(670px,-300px);
+  font-size: 15px;
+  transition: 0.5S ease-in-out;
+  cursor: pointer;
+}
+.fa-pen-to-square:hover, .fa-trash:hover{
+  color: black;
+  background-color: white;
+}
+
+
+
+
+.pic{
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+  border-radius: 50% ;
+  padding: 3px;
+  background: rgb(84, 86, 211);
+  transform: translateY(-20px);
+
+  
+}
+.pic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  
+}
+
+.card-content form{
+  width: 100%;
+}
+
+.add-event{
+  position:fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%) scale(1.25);
+  width: 780px;
+  height: 450px;
+  padding: 20px 30px;
+  background: white;
+  box-shadow: 2px 2px 5px 5px hsla(0, 0%, 0%, 0.15);
+  border-radius: 10px;
+  overflow-y:auto;
+  z-index: 101;
+}
+
+
+.add-event .close-btn-event{
+  position: absolute;
+  top:10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  color: black;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.add-event .card1 .backgroundimg{
+  height: 150px;
+  padding: 3px;
+  margin: auto;
+  background-image: url(../assets/backgrounds/background1.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-y: -60px;
+  border-radius: 10px;
+
+
+}
+.add-event .card1 .backgroundimg img{
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+
+
+}
+.add-event .card1 .image{
+  margin: auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50% ;
+  padding: 3px;
+  background: violet  ;
+  transform: translateY(-75px);
+}
+
+.add-event .card1 .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+
+}
+
+.add-event .card1 .card-detail span{
+  font-weight: var(--fw-500);
+  display: block;
+  text-align: center;
+  transform: translateY(-70px);
+}
+.add-event .card1 .card-detail .box{
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px rgba(34, 34, 34, 0.274);
+  padding: 0 2vh 0 2vh;
+  transform: translateY(-60px);
+}
+.card-detail h5{
+  transform: translateY(-40px);
+  text-align: center;
+}
+
+.member{
+  transform: translateY(-30px);
+  display: flex;
+  justify-content: space-evenly;
+}
+.members-card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+.member .rep, .mem{
+  width: 300px;
+}
+
+.card-add-event{
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  height: 408px;
+}
+.card-add-club{
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  height: 408px;
+}
+
+
+
+
+[type="text"], [type="date"] {
+color:black;
+font-weight:var(--fw-400);
+font-size: 12px;
+border-radius: 5px;
+background-color: transparent;
+transition: all 0.3s;
+padding: 5px;
+margin-bottom: 15px;
+width:20%;
+box-sizing: border-box;
+border: #aaa solid 1px;
+}
+
+textarea{
+color:black;
+
+border-radius: 5px;
+background-color: transparent;
+transition: all 0.3s;
+padding: 5px;
+margin-bottom: 15px;
+width:100%;
+box-sizing: border-box;
+border: none;
+}
+
+
+
+.sub-btns [type="submit"], [type="cancel"] {
+text-align: center;
+width: 100px;
+font-size: 16px;
+background:white;
+border-radius:5px;
+border: 1px solid black;
+cursor:pointer;
+color:rgba(0, 0, 0, 0.7);
+padding-top:5px;
+padding-bottom:5px;
+transition: all 0.3s;
+margin-top:-4px;
+
+}
+[type="submit"]:hover, [type="cancel"]:hover { background:#aaa; color: white; }
+
+.sub-btns{
+  text-align: right;
+}
+.card-content form{
+  width: 100%;
+}
+
+.add-club{
+  position:fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%) scale(1.25);
+  width: 780px;
+  height: 450px;
+  padding: 20px 30px;
+  background: white;
+  box-shadow: 2px 2px 5px 5px hsla(0, 0%, 0%, 0.15);
+  border-radius: 10px;
+  overflow-y:auto;
+  z-index: 101;
+}
+
+
+.add-club .close-btn-add{
+  position: absolute;
+  top:10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  color: black;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.add-club .card1 .backgroundimg{
+  height: 150px;
+  padding: 3px;
+  margin: auto;
+  background-image: url(../assets/backgrounds/background1.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-y: -60px;
+  border-radius: 10px;
+
+
+}
+.add-club .card1 .backgroundimg img{
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+
+
+}
+.add-club .card1 .image{
+  margin: auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50% ;
+  padding: 3px;
+  background: violet  ;
+  transform: translateY(-75px);
+}
+
+.add-club .card1 .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+
+}
+
+.add-club .card1 .card-detail span{
+  font-weight: var(--fw-500);
+  display: block;
+  text-align: center;
+  transform: translateY(-70px);
+}
+.add-club .card1 .card-detail .box{
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px rgba(34, 34, 34, 0.274);
+  padding: 0 2vh 0 2vh;
+  transform: translateY(-60px);
+}
+.card-detail h5{
+  transform: translateY(-40px);
+  text-align: center;
+}
+
+.member{
+  transform: translateY(-30px);
+  display: flex;
+  justify-content: space-evenly;
+}
+.members-card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+.member .rep, .mem{
+  width: 300px;
+}
+
+.card-add-event{
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  height: 408px;
+}
+.card-add-club{
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  height: 408px;
+}
+
+
+
+
+[type="text"], [type="date"] {
+color:black;
+font-weight:var(--fw-400);
+font-size: 12px;
+border-radius: 5px;
+background-color: transparent;
+transition: all 0.3s;
+padding: 5px;
+margin-bottom: 15px;
+width:20%;
+box-sizing: border-box;
+border: #aaa solid 1px;
+}
+
+textarea{
+color:black;
+
+border-radius: 5px;
+background-color: transparent;
+transition: all 0.3s;
+padding: 5px;
+margin-bottom: 15px;
+width:100%;
+box-sizing: border-box;
+border: none;
+}
+
+
+
+.sub-btns [type="submit"], [type="cancel"] {
+text-align: center;
+width: 100px;
+font-size: 16px;
+background:white;
+border-radius:5px;
+border: 1px solid black;
+cursor:pointer;
+color:rgba(0, 0, 0, 0.7);
+padding-top:5px;
+padding-bottom:5px;
+transition: all 0.3s;
+margin-top:-4px;
+
+}
+[type="submit"]:hover, [type="cancel"]:hover { background:#aaa; color: white; }
+
+.sub-btns{
+  text-align: right;
+}
+
+
+
+.update{
+  position:fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%) scale(1.25);
+  width: 780px;
+  height: 450px;
+  padding: 20px 30px;
+  background: white;
+  box-shadow: 2px 2px 5px 5px hsla(0, 0%, 0%, 0.15);
+  border-radius: 10px;
+  overflow-y:auto;
+  z-index: 101;
+}
+
+
+.update .close-btn-update{
+  position: absolute;
+  top:10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  color: black;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.update .card1 .backgroundimg{
+  height: 150px;
+  padding: 3px;
+  margin: auto;
+  background-image: url(../assets/backgrounds/background1.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-y: -60px;
+  border-radius: 10px;
+
+
+}
+.update .card1 .backgroundimg img{
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+
+
+}
+.update .card1 .image{
+  margin: auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50% ;
+  padding: 3px;
+  background: violet  ;
+  transform: translateY(-75px);
+}
+
+.update .card1 .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+
+}
+
+.update .card1 .card-detail span{
+  font-weight: var(--fw-500);
+  display: block;
+  text-align: center;
+  transform: translateY(-70px);
+}
+.update .card1 .card-detail .box{
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px rgba(34, 34, 34, 0.274);
+  padding: 0 2vh 0 2vh;
+  transform: translateY(-60px);
+}
+
+.member-info-rep{
+  position:fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%) scale(1.25);
+  width: 200px;
+  padding: 20px 25px ;
+  background: white;
+  box-shadow: 2px 2px 5px 5px hsla(0, 0%, 0%, 0.15);
+  border-radius: 10px;
+  overflow-y:auto;
+  text-align: center;
+}
+
+
+
+.member-info-rep .card1 .image{
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50% ;
+  padding: 3px;
+  background: rgb(84, 86, 211);
+}
+
+.member-info-rep .card1 .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+
+}
+
+.member-info-rep .card1 .card-detail span{
+  display: block;
+  text-align: center;
+
+}
+.member-info-rep .card1 .card-detail p{
+  padding: 0 5px 0 5px;
+}
+
+.member-info-rep .card1 .card-detail .box{
+  background: rgb(255, 255, 255);
+  width: max-content;
+  margin: auto;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px rgba(34, 34, 34, 0.274);
+}
+.add_club_image{
+  opacity: 0.0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height:100%;
+}
+
+.add_club_image:hover{
+  cursor:pointer;
+}
+
+@media screen and (max-width: 390px) {
+  .navbar {
+      
+      flex-wrap:nowrap !important;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .navbar-list {
+      
+      gap: 10px;
+  }
+  .logo{
+      padding-top: 8px;
+  }
+  .img {
+      padding-top: 12vh;
+      width: 80%;
+      padding-bottom: 2vh;
+  }
+  .headline {
+      align-items: center;
+      padding-bottom: 1.5vh;
+  }
+  .container1 p {
+      width: 90%;
+  }
+  .btn3, .btn4 {
+      text-align: center; 
+  }
+  .popup {
+      padding: 7px 15px;
+      width: 280px;
+  }
+  .logout{
+    text-align: right;
+    margin-right: 2vw;
+    transform: translateY(-20px);
+  }
+  .fa-pen-to-square {
+    transform: translate(227px,-185px);
+}
+.fa-trash {
+  transform: translate(277px,-185px);
+}
+.more {
+  width: 280px;
+  height: 650px;
+  padding: 7px 15px;
+  background: white;
+
+}
+.member {
+  flex-wrap: wrap;
+}
+.more .card1 .backgroundimg {
+  height: 150px;}
+.more .card1 .backgroundimg img {
+  width: 100%;
+  height: 60%;
+
+}
+.pic1 {
+  width:60px;
+  height: 60px;
+}
+.pic2 {
+  width:60px;
+  height: 60px;
+}
+.add-club {
+  width: 280px;
+  height: 450px;
+
+}
+.sub-btns{
+  text-align: center;
+}
+.pic {
+  width: 60px;
+  height: 60px;
+
+}
+.add-club .card1 .backgroundimg {
+  height: 150px;}
+.add-club .card1 .backgroundimg img {
+  width: 100%;
+  height: 60%;
+
+}
+[type="text"], [type="date"] {
+
+  width: 50%;
+
+}
+.update {
+  width: 280px;
+  height: 450px;
+  padding: 7px 15px;
+
+}
+}
+
